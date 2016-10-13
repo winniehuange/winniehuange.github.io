@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+	<title>FREEData Mobile Web | Winnie Huang</title>
+  <link rel="shortcut icon" href="images/wh-icon.png">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" href="css/slicknav.css" />
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.slicknav.js"></script>
+</head>
+<body>
+ 	<header class="open-menu">
+ 		<div class="menu">
+ 			<nav>
+ 				<ul id="menu-list">
+ 					<li><a href="index.html">ShaRead</a></li>
+ 					<li><a href="portfolio.html">Portfolio</a></li>
+ 					<li><a href="about.html">About</a></li>
+ 					<li><a href="resume.html">Resume</a> </li>
+ 				</ul>
+ 			</nav>
+ 			<div class="name" id="logo">
+ 				<h1><a href="index.html">Winnie Huang</a></h1>
+ 			</div>
+ 		</div>
+ 	</header>
+ 	<div class="top">
+    <a href="#" class="simple-back-to-top">▲Top</a>
+  </div>
+ 	<main class="portfolio-inner">
+ 		<div class="pagetitle">
+ 			<h2 class="title">FREE Data Mobile Website</h2>
+ 			<h3 class="subtitle">The Web Page Design of FREE Data Plaform for CHT</h3>
+ 			<div class="btn-control">
+ 				<span class="close"><a href="portfolio.html">Back to Portfolio</a></span>
+ 				<span class="next"><a href="portfolio05_inner.html">Next Post</a></span>
+ 				<span class="pre"><a href="portfolio03_inner.html">Previous Post</a></span>
+ 			</div>
+ 		</div>
+ 		<div class="content">
+      <p>此平台主要的TA為使用3G/4G行動裝置的中華電信客戶，所以介面設計上是以模擬App的UI/UX來設計，讓使用者就像是在使用App一般的瀏覽此平台。</p>
+ 	 		<p>This work simulates the UI/UX experience in mobile phone because the target audience of this platform is mobile phone user.</br>Users will have the similar experiances to mobile Apps without noticing any difference from a normal website</p>
+ 	 		<img src="images/portfolio04/portfolio_content_pic01.jpg">
+      <p>好康頁面Flow Chart 設計</p>
+ 	 		<p>Platform flow chart and design draft for mission and sign in feature.</p>
+ 	 		<img src="images/portfolio04/portfolio_content_pic02.jpg">
+ 	 		<p>Go to website：<a href="http://freedata.emome.net/">http://freedata.emome.net/</a></p>
+ 		</div>
+ 	</main>
+ 	<footer>
+ 		<div class="footer-content">
+ 			<span>Contact me. </span>
+ 		</div>
+ 	</footer>
+  <script>
+    $(function(){
+      $('#menu-list').slicknav({
+        label: '',
+        appendTo: '#logo',
+      });
+    });
+  </script>
+
+  <script type="text/javascript">
+  // create the back to top button
+  $('body').prepend('<a href="#" class="back-to-top">▲ Top</a>');
+
+  var amountScrolled = 300;
+
+  $(window).scroll(function() {
+    if ( $(window).scrollTop() > amountScrolled ) {
+      $('a.back-to-top').fadeIn('slow');
+    } else {
+      $('a.back-to-top').fadeOut('slow');
+    }
+  });
+
+  $('a.back-to-top, a.simple-back-to-top').click(function() {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 700);
+    return false;
+  });
+   </script>
+</body>
+</html>

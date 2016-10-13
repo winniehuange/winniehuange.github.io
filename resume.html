@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+	<title>Resume | Winnie Huang</title>
+  <link rel="shortcut icon" href="images/wh-icon.png">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" href="css/slicknav.css" />
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.slicknav.js"></script>
+</head>
+<body>
+ 	<header class="open-menu">
+ 		<div class="menu">
+ 			<nav>
+ 				<ul id="menu-list">
+ 					<li><a href="index.html">ShaRead</a></li>
+ 					<li><a href="portfolio.html">Portfolio</a></li>
+ 					<li><a href="about.html">About</a></li>
+ 					<li><a href="resume.html">Resume</a> </li>
+ 				</ul>
+ 			</nav>
+ 			<div class="name" id="logo">
+ 				<h1><a href="index.html">Winnie Huang</a></h1>
+ 			</div>
+ 		</div>
+ 	</header>
+ 	<div class="top">
+    <a href="#" class="simple-back-to-top">▲Top</a>
+  </div>
+ 	<main class="resume">
+ 		<div class="pagetitle">
+ 			<h2 class="title">Resume</h2>
+ 			<h3 class="subtitle">See more in Linkedin Profile.</h3>
+ 			<a href="#" class="btn-profile">Linkedin</a>
+ 		</div>
+ 		<div class="content">
+ 			<p class="btn-donwload"><a href="#">Download PDF</a></p>
+ 	 		<div class="resume-content">
+ 	 			<span class="full-bg-img resume-bg"></span>
+ 	 			<div class="resume-block">
+ 	 				<div class="resume-mid-content column-first">
+ 	 					<h5>experience</h5>
+ 	 					<span>Nuazure Innovative Techology</span>
+ 	 					<ul>
+ 	 						<li>UI/UX Designer, Jan 2015 - Nov 2016</li>
+ 	 						<li>Responsible for app project(include App icon), web, banner and logo(CIS)</li>
+              <li>Designed a platform about free data service, you can do some entertainment ,including download/play app, watch video and join activity</li>
+ 	 					</ul>
+ 	 					<span>Forging Cloud Shop</span>
+ 	 					<ul>
+ 	 						<li>Lead Web Visual Deisgner, Feb 2013 - Sep 2014</li>
+ 	 						<li>Responsible for lead and communicate with team members about the big project</li>
+ 	 					</ul>
+ 	 					<span>Forging Cloud Shop</span>
+ 	 					<ul>
+ 	 					<li>Web Visual Deisgner Internship, Feb 2012 - Feb 2013</li>
+ 	 					<li>Designed logo, all visual elements for online activity, and official website mockup</li>
+ 	 					</ul>
+ 	 					<h5>education</h5>
+            <span>Alphacamp</span>
+            <ul>
+              <li>Learn about product UI/UX design, Feb 2016 - Apr 2016 [ten weeks]</li>
+              <li>I bulid a team and design a project about ShaRead, also present ShaRead on Demo Day</li>
+            </ul>
+ 	 					<span>Tamkang University</span>
+ 	 					<ul>
+ 	 						<li>Major in Information Management, Sep 2009 – Jun 2013</li>
+ 	 						<li>Minor in Japaness</li>
+ 	 					</ul>
+ 	 				</div> 	 
+ 	 				<div class="resume-mid-content column-second">
+ 	 					<span>Design method</span>
+ 	 					<ul>
+ 	 						<li>User Research</li>
+ 	 						<li>Persona & Scenario</li>
+ 	 						<li>UI Flow</li>
+ 	 						<li>Function Map</li>
+              <li>Wireframe</li>
+              <li>Prototyping</li>
+              <li>Usability Testing</li>
+              <li>Mockup</li>
+ 	 					</ul>
+ 	 					<span>Software</span>
+ 	 					<ul>
+ 	 						<li>Illustrator</li>
+ 	 						<li>Photoshop</li>
+ 	 						<li>Sketch</li>
+ 	 						<li>Sublime</li>
+ 	 					</ul>
+ 	 					<span>Programming</span>
+ 	 					<ul>
+ 	 						<li>HTML/CSS</li>
+ 	 						<li>Jquery</li>
+ 	 					</ul>
+ 	 				</div> 	 
+ 	 			</div>
+ 	 						
+ 	 		</div>
+ 		</div>
+ 	</main>
+ 	<footer>
+ 		<div class="footer-content">
+ 			<span>Contact me. </span>
+ 		</div>
+ 	</footer>
+  <script>
+    $(function(){
+      $('#menu-list').slicknav({
+        label: '',
+        appendTo: '#logo',
+      });
+    });
+  </script>
+
+  <script type="text/javascript">
+  // create the back to top button
+  $('body').prepend('<a href="#" class="back-to-top">▲ Top</a>');
+
+  var amountScrolled = 300;
+
+  $(window).scroll(function() {
+    if ( $(window).scrollTop() > amountScrolled ) {
+      $('a.back-to-top').fadeIn('slow');
+    } else {
+      $('a.back-to-top').fadeOut('slow');
+    }
+  });
+
+  $('a.back-to-top, a.simple-back-to-top').click(function() {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 700);
+    return false;
+  });
+   </script>
+</body>
+</html>

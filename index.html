@@ -1,89 +1,96 @@
----
-layout: compress
----
-<!DOCTYPE html>
-<html lang="en" class="no-js">
-<head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ site.title }}</title>
-    <meta name="description" content="{{ site.description }}"/>
-    <meta name="keywords" content="{{ site.keywords }}"/>
-    <meta name="author" content="{{ site.author }}"/>
-    <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
-    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css"/>
-    <link rel="stylesheet" type="text/css" href="css/modern-blog.css"/>
-    <!--[if IE]>
-    <script type="text/javascript" src="js/vendors/html5.min.js"></script>
-    <![endif]-->
-    <script>
-        if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
-            var root = document.getElementsByTagName('html')[0];
-            root.setAttribute('class', 'ff');
-        }
-    </script>
-</head>
-<body class="body">
-<div class="container">
-    <header class="header">
-        <h1>Modern Blog<span>A Clean, Fresh Minimal Look.</span></h1>
-        <nav class="links">
-            <a href="#"><i class="fa fa-twitter-square fa-3x"></i></a>
-            <a href="#"><i class="fa fa-instagram fa-3x"></i></a>
-            <a href="#"><i class="fa fa-facebook-square fa-3x"></i></a>
-            <a href="#"><i class="fa fa-tumblr-square fa-3x"></i></a>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <title>ShaRead App | Winnie Huang</title>
+    <link rel="shortcut icon" href="images/wh-icon.png">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="css/slicknav.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+  </head>
+  <body>
+    <header class="open-menu">
+      <div class="menu">
+        <nav>
+          <ul id="menu-list">
+            <li><a href="index.html">ShaRead</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resume.html">Resume</a></li>
+          </ul>
         </nav>
-    </header>
-    <div class="content">
-        <!-- trianglify pattern container -->
-        <div class="pattern pattern--hidden"></div>
-        <!-- cards -->
-        <div class="wrapper">
-            {% for post in site.posts %}
-            <div class="card" data-id="{{ post.id }}">
-                <div class="card__container card__container--closed">
-                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg"
-                         xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1200"
-                         preserveAspectRatio="xMidYMid slice">
-                        <defs>
-                            <clipPath id="{{ post.id }}-clip-path">
-                                <polygon class="clip" points="0,1200 0,0 1920,0 1920,1200"></polygon>
-                            </clipPath>
-                        </defs>
-                        <image clip-path="url(#{{ post.id }}-clip-path)" width="1920" height="1200"
-                               xlink:href="{{ post.image }}"></image>
-                    </svg>
-                    <div class="card__content">
-                        <i class="card__btn-close fa fa-times"></i>
-                        <div class="card__caption">
-                            <h2 class="card__title">{{ post.title }}</h2>
-                            <p class="card__subtitle">{{ post.subtitle }}</p>
-                        </div>
-                        <div class="card__copy">
-                            <div class="meta">
-                                <img class="meta__avatar" src="{{ post.avatar }}"/>
-                                <span class="meta__author">{{ post.author }}</span>
-                                <span class="meta__date">{{ post.date | date: "%Y-%m-%d" }}</span>
-                            </div>
-                            {{ post.content }}
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-            <!-- /cards -->
+        <div class="name" id="logo">
+          <h1><a href="index.html">Winnie Huang</a></h1>
         </div>
+      </div>
+    </header>
+    <div class="top">
+      <a href="#" class="simple-back-to-top">▲Top</a>
     </div>
-    <!-- /container -->
-</div>
-<!-- JS -->
-<script src="js/vendors/trianglify.min.js"></script>
-<script src="js/vendors/TweenMax.min.js"></script>
-<script src="js/vendors/ScrollToPlugin.min.js"></script>
-<script src="js/vendors/cash.min.js"></script>
-<script src="js/card-modern-blog.js"></script>
-<script src="js/modern-blog.js"></script>
-</body>
-</html>
+    <main class="portfolio-inner">
+    <div class="pagetitle">
+      <h2 class="title">ShaRead App</h2>
+      <h3 class="subtitle">I am the founder of this project and focus on the user behavior research, UI/UX design and project planning.</h3>
+      <div class="btn-control">
+        <span class="close"><a href="portfolio.html">Back to Portfolio</a></span>
+        <span class="next"><a href="portfolio07_inner.html">Next Post</a></span>
+        <span class="pre"><a href="portfolio05_inner.html">Previous Post</a></span>
+      </div>
+    </div>
+    <div class="content">
+      <p class="content-title">[Project Brief]</p>
+      <p>我想要做一個媒合的平台，讓喜愛閱讀又樂於分享書籍的人，分享自己家的書櫃，並且透過平台開租書店，已出租方式租給想要閱讀的人。會想要以租借的方式，是因為想要利用互惠的方式分享書籍，一方得到租金，一方得到書籍內容、書評及個人觀點等等，所以我也開始著手設計這個產品，並且取名為「ShaRead」！</p>
+      <p>I want to create a platform which can let people who like reading and enjoy sharing their bookshelf at home, and through platform to open bookstore so that people can rent books to someone who want to read books.</br>Because of using mutually beneficial way to share books, one get money, another get books content, comment and some personal view, I prefer to rent book model.</br> 
+      Therefore, I begain to design this product, and name it「ShaRead」.</p>
+      <p class="content-title">[Wireframe]</p>
+      <img src="images/portfolio06/portfolio_content_pic01.jpg">
+      <p class="content-title">[Mockup]</p>
+      <img src="images/portfolio06/portfolio_content_pic02.jpg">
+      <img src="images/portfolio06/portfolio_content_pic03.jpg">
+      <img src="images/portfolio06/portfolio_content_pic04.jpg">
+      <p class="content-title">[Demo Day]</p>
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/4-4LbQDNYz0?list=PLXLKn5LZ-8H_An6MW0Fe9xR09mkIa5KFU" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <span>Contact me. </span>
+      </div>
+    </footer>
+    <script>
+      $(function(){
+        $('#menu-list').slicknav({
+          label: '',
+          appendTo: '#logo',
+        });
+      });
+    </script>
+
+    <script type="text/javascript">
+  // create the back to top button
+  $('body').prepend('<a href="#" class="back-to-top">▲ Top</a>');
+
+  var amountScrolled = 300;
+
+  $(window).scroll(function() {
+    if ( $(window).scrollTop() > amountScrolled ) {
+      $('a.back-to-top').fadeIn('slow');
+    } else {
+      $('a.back-to-top').fadeOut('slow');
+    }
+  });
+
+  $('a.back-to-top, a.simple-back-to-top').click(function() {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 700);
+    return false;
+  });
+   </script>
+  </body>
+</html> 

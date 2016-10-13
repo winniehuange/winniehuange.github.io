@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+	<title>FREEData Mobile Web | Winnie Huang</title>
+  <link rel="shortcut icon" href="images/wh-icon.png">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" href="css/slicknav.css" />
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.slicknav.js"></script>
+</head>
+<body>
+ 	<header class="open-menu">
+ 		<div class="menu">
+ 			<nav>
+ 				<ul id="menu-list">
+ 					<li><a href="index.html">ShaRead</a></li>
+ 					<li><a href="portfolio.html">Portfolio</a></li>
+ 					<li><a href="about.html">About</a></li>
+ 					<li><a href="resume.html">Resume</a> </li>
+ 				</ul>
+ 			</nav>
+ 			<div class="name" id="logo">
+ 				<h1><a href="index.html">Winnie Huang</a></h1>
+ 			</div>
+ 		</div>
+ 	</header>
+ 	<div class="top">
+    <a href="#" class="simple-back-to-top">▲Top</a>
+  </div>
+ 	<main class="portfolio-inner">
+ 		<div class="pagetitle">
+ 			<h2 class="title">eGay - digital photo album</h2>
+ 			<h3 class="subtitle">10th,Jun,2016</h3>
+ 			<div class="btn-control">
+ 				<span class="close"><a href="portfolio.html">Back to Portfolio</a></span>
+ 				<!-- <span class="next"><a href="#">Next Post</a></span> -->
+ 				<span class="pre"><a href="index.html">Previous Post</a></span>
+ 			</div>
+ 		</div>
+ 		<div class="content">	
+ 	 		<img src="images/portfolio07/portfolio_content_pic.jpg">
+ 		</div>
+ 	</main>
+ 	<footer>
+ 		<div class="footer-content">
+ 			<span>Contact me. </span>
+ 		</div>
+ 	</footer>
+  <script>
+    $(function(){
+      $('#menu-list').slicknav({
+        label: '',
+        appendTo: '#logo',
+      });
+    });
+  </script>
+
+  <script type="text/javascript">
+  // create the back to top button
+  $('body').prepend('<a href="#" class="back-to-top">▲ Top</a>');
+
+  var amountScrolled = 300;
+
+  $(window).scroll(function() {
+    if ( $(window).scrollTop() > amountScrolled ) {
+      $('a.back-to-top').fadeIn('slow');
+    } else {
+      $('a.back-to-top').fadeOut('slow');
+    }
+  });
+
+  $('a.back-to-top, a.simple-back-to-top').click(function() {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 700);
+    return false;
+  });
+   </script>
+</body>
+</html>

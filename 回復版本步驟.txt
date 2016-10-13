@@ -1,0 +1,5 @@
+﻿【回復前版本】
+
+第一步：把想要取消的commit選取按revert commit 
+第二步：commit並打註解
+第二步：按push
