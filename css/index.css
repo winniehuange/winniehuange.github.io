@@ -205,10 +205,10 @@ a:hover.back-to-top {
 	border-color:#dcdcdc;
 }
 
-.pic{
+/*.pic{
 	overflow: hidden;
 	margin-bottom:80px; 
-}
+}*/
 .pic .images{
 	position: relative;
 	width:50%;
