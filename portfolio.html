@@ -39,7 +39,7 @@
  		<div class="content">			
   	 		<div class="tab">
  	 			<ul class="category" data-option-key="filter">
- 	 				<li><a href="#filter" data-option-value=".default">All</a></li>
+ 	 				<li><a href="#filter" data-option-value="*" class="category-default">All</a></li>
  	 				<li><a href="#filter" data-option-value=".uiux">UI/UX</a></li>
  	 				<li><a href="#filter" data-option-value=".web">Web</a></li>
  	 				<li><a href="#filter" data-option-value=".visual">Visual</a></li>
@@ -48,7 +48,7 @@
  	 			</ul>
  	 		</div> 
  	 		<div class="pic">
- 	 			<div class="images odd seventh element-item default uiux">
+ 	 			<div class="images odd seventh element-item uiux">
  	 				<a href="portfolio07_inner.html">
  	 					<img src="images/portfolio07.jpg">
  	 					<div class="overlay"></div>
@@ -57,7 +57,7 @@
  	 					</div>
  	 				</a>
  	 			</div>
- 	 			<div class="images even fifth element-item default uiux">
+ 	 			<div class="images even fifth element-item uiux">
  	 				<a href="portfolio05_inner.html">
  	 					<img src="images/portfolio05.jpg">
  	 					<div class="overlay"></div>
@@ -66,7 +66,7 @@
  	 					</div>
  	 				</a>
  	 			</div>
- 	 			<div class="images odd fourth element-item default web">
+ 	 			<div class="images odd fourth element-item web">
  	 				<a href="portfolio04_inner.html">
  	 					<img src="images/portfolio04.jpg">
  	 					<div class="overlay"></div>
@@ -75,7 +75,7 @@
  	 					</div>
  	 				</a>
  	 			</div>
- 	 			<div class="images even third element-item default web">
+ 	 			<div class="images even third element-item web">
  	 				<a href="portfolio03_inner.html">
  	 					<img src="images/portfolio03.jpg">
  	 					<div class="overlay"></div>
@@ -84,7 +84,7 @@
  	 					</div>
  	 				</a>
  	 			</div>
- 	 			<div class="images odd second element-item default web">
+ 	 			<div class="images odd second element-item web">
  	 				<a href="portfolio02_inner.html">
  	 					<img src="images/portfolio02.jpg">
  	 					<div class="overlay"></div>
@@ -93,7 +93,7 @@
  	 					</div>
  	 				</a>
  	 			</div>
- 	 			<div class="images even first element-item default web">
+ 	 			<div class="images even first element-item web">
  	 				<a href="portfolio01_inner.html">
  	 					<img src="images/portfolio01.jpg">
  	 					<div class="overlay"></div>
@@ -102,7 +102,7 @@
  	 					</div>
  	 				</a>
  	 			</div>
-        <div class="images odd sixth-visual element-item default visual">
+        <div class="images odd sixth-visual element-item visual">
           <a href="#">
             <img src="images/portfolio_visual06.jpg">
             <div class="overlay"></div>
@@ -111,7 +111,7 @@
             </div>
           </a>
         </div>
-        <div class="images even fifth-visual element-item default visual">
+        <div class="images even fifth-visual element-item visual">
           <a href="#">
             <img src="images/portfolio_visual05.jpg">
             <div class="overlay"></div>
@@ -120,7 +120,7 @@
             </div>
           </a>
         </div>
-        <div class="images odd fourth-visual element-item default visual">
+        <div class="images odd fourth-visual element-item visual">
           <a href="#">
             <img src="images/portfolio_visual04.jpg">
             <div class="overlay"></div>
@@ -129,7 +129,7 @@
             </div>
           </a>
         </div>
-        <div class="images even third-visual element-item default visual">
+        <div class="images even third-visual element-item visual">
           <a href="#">
             <img src="images/portfolio_visual03.jpg">
             <div class="overlay"></div>
@@ -138,7 +138,7 @@
             </div>
           </a>
         </div>
-        <div class="images odd second-visual element-item default visual">
+        <div class="images odd second-visual element-item visual">
           <a href="#">
             <img src="images/portfolio_visual02.jpg">
             <div class="overlay"></div>
@@ -147,7 +147,7 @@
             </div>
           </a>
         </div>
-        <div class="images even first-visual element-item default visual">
+        <div class="images even first-visual element-item visual">
           <a href="#">
             <img src="images/portfolio_visual01.jpg">
             <div class="overlay"></div>
@@ -156,7 +156,7 @@
             </div>
           </a>
         </div>
-        <div class="images odd first-print element-item default print">
+        <div class="images odd first-print element-item print">
           <a href="#">
             <img src="images/portfolio_print01.jpg">
             <div class="overlay"></div>
@@ -165,7 +165,7 @@
             </div>
           </a>
         </div>
-        <div class="images even first-logo element-item default logo">
+        <div class="images even first-logo element-item logo">
           <a href="#">
             <img src="images/portfolio_logo01.jpg">
             <div class="overlay"></div>
@@ -203,7 +203,7 @@
       var $container = $('.pic');
       $container.isotope({
         itemSelector : '.element-item',
-        filter: '.default'
+        filter: '*'
       });
       var $optionSets = $('.category'),
           $optionLinks = $optionSets.find('a');
@@ -220,7 +220,9 @@
         $container.isotope( options );
         return false;
       });
-      $('.category-default').click();
+      setTimeout(function(){
+        $('.category-default').click();
+      }, 500);
     });
   </script>
   <script type="text/javascript">
