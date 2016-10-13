@@ -618,6 +618,11 @@ main.resume .pagetitle{
 	.brief-intro{
 		width:420px;
 	}
+	/*2016-10-13*/
+	.pic img{
+		width:420px;
+		height:328px;
+	}
 	/* -------------------------
             作品集內頁-內容
 	---------------------------*/
