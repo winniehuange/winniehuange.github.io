@@ -201,14 +201,12 @@
   	// Isotope dynamic filter tab 
     $(function(){
       var $container = $('.pic');
-      $container.imagesLoaded( function() {
-          $container.isotope({
-            itemSelector : '.element-item',
-            filter: '.default'
-          });
+      $container.isotope({
+        itemSelector : '.element-item',
+        filter: '.default'
       });
       var $optionSets = $('.category'),
-          $optionLinks = $optionSets.find('a');
+      var $optionLinks = $optionSets.find('a');      
       $optionLinks.click(function(){
         var $this = $(this);
         var $optionSet = $this.parents('.category');
