@@ -39,7 +39,7 @@
  		<div class="content">			
   	 		<div class="tab">
  	 			<ul class="category" data-option-key="filter">
- 	 				<li><a href="#filter" data-option-value="*">All</a></li>
+ 	 				<li><a href="#filter" data-option-value="*" class="category-default">All</a></li>
  	 				<li><a href="#filter" data-option-value=".uiux">UI/UX</a></li>
  	 				<li><a href="#filter" data-option-value=".web">Web</a></li>
  	 				<li><a href="#filter" data-option-value=".visual">Visual</a></li>
@@ -220,28 +220,29 @@
         $container.isotope( options );
         return false;
       });
+      $('.category-default').click();
     });
   </script>
   <script type="text/javascript">
-	// create the back to top button
-	$('body').prepend('<a href="#" class="back-to-top">▲ Top</a>');
+  	// create the back to top button
+  	$('body').prepend('<a href="#" class="back-to-top">▲ Top</a>');
 
-	var amountScrolled = 300;
+  	var amountScrolled = 300;
 
-	$(window).scroll(function() {
-		if ( $(window).scrollTop() > amountScrolled ) {
-			$('a.back-to-top').fadeIn('slow');
-		} else {
-			$('a.back-to-top').fadeOut('slow');
-		}
-	});
+  	$(window).scroll(function() {
+  		if ( $(window).scrollTop() > amountScrolled ) {
+  			$('a.back-to-top').fadeIn('slow');
+  		} else {
+  			$('a.back-to-top').fadeOut('slow');
+  		}
+  	});
 
-	$('a.back-to-top, a.simple-back-to-top').click(function() {
-		$('html, body').animate({
-			scrollTop: 0
-		}, 700);
-		return false;
-	});
+  	$('a.back-to-top, a.simple-back-to-top').click(function() {
+  		$('html, body').animate({
+  			scrollTop: 0
+  		}, 700);
+  		return false;
+  	});
    </script>
 </body>
 </html>
