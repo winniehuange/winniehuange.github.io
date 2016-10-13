@@ -220,8 +220,11 @@ a:hover.back-to-top {
 .pic .even{
 	display:inline-block; 
 }
+/*2016-10-13*/
 .pic img{
-	width:100%;
+	/*width:100%;*/
+	width:480px;
+	height:375px;
 }
 
 /*hover img effect*/
@@ -231,12 +234,6 @@ a:hover.back-to-top {
 	height:100%;
 	background:#222;
 }
-
-.pic .images a img{
-	height:375px;
-	width:480px;
-}
-
 .pic .images a img,.pic .images a .overlay{
 	transition: all 0.45s ease-in-out;
 	-webkit-transition: all 0.45s ease-in-out;
@@ -567,6 +564,14 @@ main.resume .pagetitle{
 		width:768px;
 	}
 	/* -------------------------
+            	作品集
+	---------------------------*/
+	/*2016-10-13*/
+	.pic img{
+		width:384px;
+		height:300px;
+	}
+	/* -------------------------
         	作品集內頁-標題
 	---------------------------*/
 	.portfolio-inner .title,.portfolio-inner .subtitle{
@@ -788,6 +793,11 @@ main.resume .pagetitle{
 	---------------------------*/
 	.brief-intro{
 		width:300px;
+	}
+	/*2016-10-13*/
+	.pic img{
+		width:300px;
+		height:234px;
 	}
 	/* -------------------------
             作品集內頁-內容
