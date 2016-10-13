@@ -202,7 +202,8 @@
     $(function(){
       var $container = $('.pic');
       $container.isotope({
-        itemSelector : '.element-item'
+        itemSelector : '.element-item',
+        filter: '*'
       });
       var $optionSets = $('.category'),
           $optionLinks = $optionSets.find('a');
