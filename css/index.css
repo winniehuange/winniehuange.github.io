@@ -231,6 +231,12 @@ a:hover.back-to-top {
 	height:100%;
 	background:#222;
 }
+
+.pic .images a img{
+	height:375px;
+	width:480px;
+}
+
 .pic .images a img,.pic .images a .overlay{
 	transition: all 0.45s ease-in-out;
 	-webkit-transition: all 0.45s ease-in-out;
