@@ -222,9 +222,7 @@ a:hover.back-to-top {
 }
 /*2016-10-13*/
 .pic img{
-	/*width:100%;*/
-	width:480px;
-	height:375px;
+	width:100%;
 }
 
 /*hover img effect*/
@@ -564,14 +562,6 @@ main.resume .pagetitle{
 		width:768px;
 	}
 	/* -------------------------
-            	作品集
-	---------------------------*/
-	/*2016-10-13*/
-	.pic img{
-		width:384px;
-		height:300px;
-	}
-	/* -------------------------
         	作品集內頁-標題
 	---------------------------*/
 	.portfolio-inner .title,.portfolio-inner .subtitle{
@@ -617,11 +607,6 @@ main.resume .pagetitle{
 	---------------------------*/
 	.brief-intro{
 		width:420px;
-	}
-	/*2016-10-13*/
-	.pic img{
-		width:420px;
-		height:328px;
 	}
 	/* -------------------------
             作品集內頁-內容
@@ -798,11 +783,6 @@ main.resume .pagetitle{
 	---------------------------*/
 	.brief-intro{
 		width:300px;
-	}
-	/*2016-10-13*/
-	.pic img{
-		width:300px;
-		height:234px;
 	}
 	/* -------------------------
             作品集內頁-內容
