@@ -209,6 +209,9 @@
           $optionLinks = $optionSets.find('a');      
       $optionLinks.click(function(){
         var $this = $(this);
+        // remove and set current btn to active class
+        $optionLinks.removeClass('active');
+        $this.addClass('active');
         var $optionSet = $this.parents('.category');
         // make option object dynamically, i.e. { filter: '.my-filter-class' }
         var options = {},
