@@ -204,6 +204,10 @@ a:hover.back-to-top {
 .content .tab li a:active,.content .tab li a:hover{
 	border-color:#dcdcdc;
 }
+/*2016-10-14-add*/
+.content .tab li a.active{
+	border-color:#dcdcdc;
+}
 
 .pic{
 	overflow: hidden;
