@@ -376,10 +376,10 @@ a:hover.back-to-top {
 	text-align:center;
 	margin:30px 0; 
 }
-.portfolio-inner .video iframe{
+/*.portfolio-inner .video iframe{
 	width:560px;
 	height:315px;
-}
+}*/
 
 /* -------------------------
       關於我-社群網站按鈕
@@ -612,7 +612,8 @@ main.resume .pagetitle{
             作品集內頁-內容
 	---------------------------*/
 	/*2016-10-07-add*/
-	.portfolio-inner .video iframe{
+	/*2016-10-14-edit*/
+	.portfolio-inner .original-size-video iframe{
 		width:420px;
 	}
 	/* -------------------------
@@ -788,9 +789,14 @@ main.resume .pagetitle{
             作品集內頁-內容
 	---------------------------*/
 	/*2016-10-07-add*/
-	.portfolio-inner .video iframe{
+	/*2016-10-14-edit*/
+	.portfolio-inner .original-size-video iframe{
 		width:300px;
 		height:250px;
+	}
+	.portfolio-inner .phone-size-video iframe{
+		width:300px;
+		height:534px;
 	}
 	/* -------------------------
           	關於-內容
