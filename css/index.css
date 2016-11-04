@@ -413,6 +413,10 @@ a:hover.back-to-top {
 .social-icon.behance{
 	background-image: url('../images/behance-logo.png');
 }
+/*2016-11-04-add*/
+.social-icon.linkedin{
+	background-image: url('../images/linkedin-logo.png');
+}
 /*hover effect*/
 a.social-icon{
 	opacity:0.75; 
