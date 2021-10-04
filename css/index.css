@@ -467,17 +467,17 @@ main.about .pagetitle,main.about .btn-social,main.about .aboutme-content{
 	margin:0 auto;
  	width:960px;
 }
-/*main.about .content{
-	margin:40px 0;
-}*/
 /*About me photo*//*2021-10-04*/
 .aboutme-pic{
 	margin-bottom:80px;
 }
-.aboutme-pic img{
+.aboutme-pic img, .aboutme-pic-mobile img{
 	width:100%;
 	max-width:100% !important; 
 	height:auto !important;
+}
+.aboutme-pic-mobile img{
+	display: none;
 }
 
 /*Parallax-Style Image*/
@@ -614,6 +614,10 @@ main.resume .pagetitle{
 	main.about .pagetitle,main.about .btn-social,main.about .aboutme-content{
 		width:768px;
 	}
+	/*2021-10-04-add*/
+	.aboutme-pic-mobile img{
+		display: none;
+	}
 	.full-bg-img{/*2016-10-06-修正不滾動*/
 		padding-bottom:60%;
 		background-attachment:initial;
@@ -659,6 +663,16 @@ main.resume .pagetitle{
 	---------------------------*/
 	main.about .pagetitle,main.about .btn-social,main.about .aboutme-content{
 		width:420px;
+	}
+	/*2021-10-04-add*/
+	.aboutme-pic{
+		margin-bottom:0px;
+	}
+	.aboutme-pic img{
+		display: none;
+	}
+	.aboutme-pic-mobile img{
+		display:block;
 	}
 	/* -------------------------
           	履歷-內容
@@ -841,6 +855,16 @@ main.resume .pagetitle{
 	---------------------------*/
 	main.about .pagetitle,main.about .btn-social,main.about .aboutme-content{
 		width:300px;
+	}
+	/*2021-10-04-add*/
+	.aboutme-pic{
+		margin-bottom:0px;
+	}
+	.aboutme-pic img{
+		display: none;
+	}
+	.aboutme-pic-mobile img{
+		display:block;
 	}
 	/* -------------------------
           	履歷-內容
