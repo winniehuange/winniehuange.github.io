@@ -93,8 +93,6 @@ header nav ul{
 header nav ul li{
 	float:left;
 }
-
-
 header nav a{
 	font-size:14px; 
 	color:#666;
@@ -126,14 +124,19 @@ header .mobile-toggle span{
 }
 footer{
 	background:#222;
-	padding:20px 0;
+	padding:60px 0;
 	clear:both; 
+	margin-top:100px;/*2021-10-01-add*/
 }
+/*2021-10-01-add*/
 footer span{
 	color:#fff;
-	font-size:18px; 
+	font-size:14px; 
+	line-height:30px;
 }
-
+footer span.text-color{
+	color:#c9c9c9;
+}
 
 /*gotop button*/
 a.back-to-top{
@@ -368,7 +371,7 @@ a:hover.back-to-top {
 }
 .portfolio-inner p.content-title{
 	text-align:center;
-	font-size:18px; 
+	font-size:24px; 
 	font-weight:bold; 
 
 }
@@ -384,6 +387,32 @@ a:hover.back-to-top {
 	width:560px;
 	height:315px;
 }*/
+/*2021-09-27-add*/
+.portfolio-inner p.content-title02{
+	text-align:left;
+	font-size:30px; 
+	font-weight:bold; 
+
+}
+.portfolio-inner p.content-subtitle{
+	text-align:left;
+	font-size:18px; 
+	font-weight:bold; 
+
+}
+.portfolio-inner li{
+	font-size:16px;
+	line-height:normal;
+	margin:20px 0;
+	color:#666;  
+}
+.portfolio-inner p.text-color{
+color:#2E75B6;
+}
+
+.portfolio-inner p a{
+color:#2E75B6;
+}
 
 /* -------------------------
       關於我-社群網站按鈕
@@ -407,13 +436,15 @@ a:hover.back-to-top {
 	transition: color 0.3s ease-out, background 0.3s, ease-out; 
 	-webkit-transition: color 0.3s ease-out, background 0.3s, ease-out; 
 }
+/*2021-10-01-edit*/
 .social-icon.facebook{
 	background-image: url('../images/fb-logo.png');
 }
+/*2021-10-01-edit*/
 .social-icon.behance{
 	background-image: url('../images/behance-logo.png');
 }
-/*2016-11-04-add*/
+/*2021-10-01-edit*/
 .social-icon.linkedin{
 	background-image: url('../images/linkedin-logo.png');
 }
@@ -430,19 +461,18 @@ a.social-icon:hover{
 ---------------------------*/
 main.about{
 	width:100%;
+	padding-top: 50px;/*2021-10-04-add*/
 }
-main.about .pagetitle,main.about .btn-social,main.about .aboutme-mid-content{
+main.about .pagetitle,main.about .btn-social,main.about .aboutme-content{
 	margin:0 auto;
  	width:960px;
 }
-main.about .content{
+/*main.about .content{
 	margin:40px 0;
-}
-/*第一張圖*/
+}*/
+/*About me photo*//*2021-10-04*/
 .aboutme-pic{
 	margin-bottom:80px;
-	margin:0 auto;/*2016-10-07-add*/
-	width:960px;/*2016-10-07-add*/
 }
 .aboutme-pic img{
 	width:100%;
@@ -465,16 +495,16 @@ main.about .content{
 	background-position:center;  
 	padding-bottom: 40%;
 }
-/*2016-10-06-新增背景class*/
-.about-bg{
-	background-image:url('../images/about-bg.png'); 
+/*2021-10-04-add*/
+.aboutme-content{
+	line-height:2em;
 }
-.aboutme-mid-content{
-	padding:20px 0;
+.aboutme-content h3{
+	margin-top:40px;
+	margin-bottom:10px;
+	font-size:24px;
 }
-.aboutme-mid-content p,.aboutme-mid-content img{
-	padding:20px 0;
-}
+
 
 /* -------------------------
          履歷-連結按鈕
@@ -522,12 +552,12 @@ main.resume .pagetitle{
 }
 .column-first{
 	float:left;
-	width:74%;
-	margin-right:4%; 
+	width:64%;
+	margin-right:6%; 
 }
 .column-second{
 	float:left; 
-	width:20%; 
+	width:30%; 
 }
 .resume-mid-content h5{
 	font-family:Arial,"Microsoft JhengHei"; 
