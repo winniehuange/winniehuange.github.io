@@ -611,7 +611,7 @@ main.resume .pagetitle{
 	main.about{
 		margin:0;
 	}
-	main.about .pagetitle,main.about .btn-social,main.about .aboutme-mid-content{
+	main.about .pagetitle,main.about .btn-social,main.about .aboutme-content{
 		width:768px;
 	}
 	.full-bg-img{/*2016-10-06-修正不滾動*/
@@ -657,7 +657,7 @@ main.resume .pagetitle{
 	/* -------------------------
           	關於-內容
 	---------------------------*/
-	main.about .pagetitle,main.about .btn-social,main.about .aboutme-mid-content{
+	main.about .pagetitle,main.about .btn-social,main.about .aboutme-content{
 		width:420px;
 	}
 	/* -------------------------
@@ -839,7 +839,7 @@ main.resume .pagetitle{
 	/* -------------------------
           	關於-內容
 	---------------------------*/
-	main.about .pagetitle,main.about .btn-social,main.about .aboutme-mid-content{
+	main.about .pagetitle,main.about .btn-social,main.about .aboutme-content{
 		width:300px;
 	}
 	/* -------------------------
