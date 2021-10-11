@@ -39,8 +39,10 @@
  		<div class="content">			
   	 		<div class="tab">
  	 			<ul class="category" data-option-key="filter">
- 	 				<li><a href="#filter" data-option-value="*">All</a></li>
- 	 				<li><a class="active" href="#filter" data-option-value=".uiux">UI/UX</a></li>
+          <li><a class="active" href="#filter" data-option-value="*">All</a></li>
+          <li><a href="#filter" data-option-value=".uiux">UI/UX</a></li>
+ 	 				<!-- <li><a href="#filter" data-option-value="*">All</a></li>
+ 	 				<li><a class="active" href="#filter" data-option-value=".uiux">UI/UX</a></li> -->
  	 				<li><a href="#filter" data-option-value=".web">Web</a></li>
  	 				<li><a href="#filter" data-option-value=".visual">Visual</a></li>
  	 				<li><a href="#filter" data-option-value=".print">Print</a></li>
@@ -254,7 +256,7 @@
       var $container = $('.pic');
       $container.isotope({
         itemSelector : '.element-item',
-        filter: '.uiux'
+        filter: '*'
       });
       var $optionSets = $('.category'),
           $optionLinks = $optionSets.find('a');      
