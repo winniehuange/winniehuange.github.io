@@ -577,8 +577,17 @@ main.resume .pagetitle{
 	text-transform:uppercase;
 	letter-spacing:1.5px; 
 	line-height: 30px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;/*2021-10-19-modify*/
 	display:block; 
+}
+/*2021-10-19-add*/
+.resume-mid-content p{
+	font-family:Arial,"Microsoft JhengHei"; 
+	font-weight:300; 
+	font-size: 14px;
+	color:#505050;
+	letter-spacing:1.5px;
+	margin-bottom: 20px;
 }
 .resume-mid-content ul{
 	line-height: 30px;
